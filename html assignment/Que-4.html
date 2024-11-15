@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nested Tables</title>
+    <style>
+        tr{
+            text-align: center; 
+            font-family: Arial, Helvetica, sans-serif;
+        }
+    </style>
+   
+</head>
+
+<body>
+    <table border="2px" cellspacing="3" cellpadding="8" width="40%" align="center">
+        <thead bgcolor="#5DE2E7">
+            <tr>
+                <th>Device</th>
+                <th>Brand</th>
+                <th>Specifications</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>Smartphone</td>
+                <td>Apple</td>
+                <td>
+                    <table border="2px" cellspacing="3" cellpadding="8" width="100%">
+                        <thead  bgcolor="#F6D23C">
+                            <tr>
+                                <th>Model</th>
+                                <th>Storage</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>iPhone 12 Pro</td>
+                                <td>256Gb</td>
+                            </tr>
+                            <tr>
+                                <td>iPhone SE</td>
+                                <td>128Gb</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </td>
+            </tr>
+            <tr>
+                <td>Laptop</td>
+                <td>HP</td>
+                <td>15.6" Display</td>
+            </tr>
+            <tr>
+                <td>Tablet</td>
+                <td>Samsung</td>
+                <td>10.5" Display</td>
+            </tr>
+        </tbody>
+    </table>
+</body>
+
+</html>

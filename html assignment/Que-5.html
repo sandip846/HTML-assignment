@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Invoice</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f0f8f5;
+        }
+        .invoice-table {
+            width: 100%;
+            max-width: 600px;
+            margin: auto;
+            border-collapse: collapse;
+            border: 1px solid #000;
+            background-color:#AFF8CA;
+        }
+        .invoice-table th, .invoice-table td {
+            border: 1px solid #000;
+            padding: 8px;
+            text-align: left;
+        }
+        .invoice-header td {
+            font-weight: bold;
+            text-align: center;
+        }
+        .subtotal, .total-row {
+            font-weight: bold;
+        }
+        .align-right {
+            text-align: right;
+        }
+    </style>
+</head>
+<body>
+
+<table class="invoice-table">
+    <tr class="invoice-header">
+        <td colspan="2">Invoice #9876543210</td>
+        <td colspan="2">15 September 2020</td>
+    </tr>
+    <tr>
+        <td colspan="2">
+            <strong>Pay to:</strong><br>
+            Acme Billing Co.<br>
+            123 Main St.<br>
+            Cityville, NA 12345
+        </td>
+        <td colspan="2">
+            <strong>Customer:</strong><br>
+            John Smith<br>
+            321 Willow Way<br>
+            Southeast Northwestershire, MA 54321
+        </td>
+    </tr>
+    <tr>
+        <th>Name / Description</th>
+        <th>Qty.</th>
+        <th>@</th>
+        <th>Cost</th>
+    </tr>
+    <tr>
+        <td>Paperclips</td>
+        <td>2000</td>
+        <td>0.02</td>
+        <td>20.00</td>
+    </tr>
+    <tr>
+        <td>Staples (box)</td>
+        <td>200</td>
+        <td>2.00</td>
+        <td>200.00</td>
+    </tr>
+    <tr class="subtotal">
+        <td colspan="3" class="align-right">Subtotal</td>
+        <td>220.00</td>
+    </tr>
+    <tr>
+        <td colspan="2"></td>
+        <td class="align-right">Tax 9%</td>
+        <td>19.80</td>
+    </tr>
+    <tr class="total-row">
+        <td colspan="3" class="align-right">Grand Total</td>
+        <td>239.80</td>
+    </tr>
+</table>
+
+</body>
+</html>
